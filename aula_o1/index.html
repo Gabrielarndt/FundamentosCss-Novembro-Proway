@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="compartilhado.css">
+    <title>Document</title>
+    <style>
+        /* id para # e class para .afins, houver para ação qnd passa o mouse e after é pro que acontece depois tipo ja fica como o padrao do bagulho sla, por exemplo o nome do paragrafo da pra colocar por ele e nao so coloca p dps */
+        p {
+            color: red;
+        }
+
+      
+
+        img {
+            width: 890px;
+            height: 125px;
+        }
+        img:hover{
+            width: 890px;
+            height: 600px;
+        }
+
+        #meu_id{
+            border: 1px solid black;
+        }
+
+        #borda_grossa{
+            border: 5px dashed black;
+        }
+
+        .remover_estilo{
+            text-decoration: none;
+        }
+
+        p:hover{
+            font-weight: bold;
+        }
+
+        .nomes_proprios:hover{
+            text-transform: capitalize;
+        }
+        
+        #enviar{
+            background-color: blue;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 8px;
+            color: white;
+
+        }
+        #enviar::after{
+            content: "enviar";
+        }
+
+        #enviar:hover{
+            background-color: aqua;
+            color: black;
+            width: 300px;
+        }
+
+        #enviar:hover::after{
+            content: "(no css Não da erro mas no javasccript sim, entao é melhor ja prestar atencao agora)";
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="enviar"></div>
+
+
+    <h1>Sou um header grande</h1>
+    <hr>
+    <p>Sou um paragrafo</p>
+    <a href="pagina_3.html">pagina tres</a>
+    <a href="outra_pagina.html" target="_blank">outra pagina por cima</a>
+    <a href="https://www.proway.com.br/" id="meu_id" class="remover_estilo">Proway</a>
+    <hr>
+    <img src="https://st2.depositphotos.com/4164031/6914/i/450/depositphotos_69145633-stock-photo-flag-of-brazil.jpg">
+    <hr>
+    <ul> <!-- <ul>i*5 -->
+        <li><i id="borda_grossa" class="remover_estilo">italico</i></li>
+        <li><b class="remover_estilo">negrito</b></li>
+        <li><u class="remover_estilo">linha</u></li>
+        <li><S class="remover_estilo">palavra riscada</S></li>
+    </ul>
+    <!-- p{}
+    p*5{teste} -->
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    
+    <hr>
+   
+
+    <!-- p>u.remover_estilo{sem underline} -->
+    <p><u class="remover_estilo">sem underline</u></p>
+
+    <p><s id="unico">sou unico</s></p>
+
+    <h2 style="background-color: blueviolet; color: white;">Titulo até que grande (nubank)</h2>
+
+    <u style="text-decoration: none;"> sem linha</u>
+<br>
+    <s style="text-decoration: none;"> sem palavra riscada</s>
+
+    <p class="nomes_proprios">rubem duarte oliota</p>
+    <p class="nomes_proprios">RUBEM DUARTE OLIOTA</p>
+
+</body>
+
+</html>
