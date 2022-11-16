@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #repetir_horizontal {
+            background-image: url(imagem/brasil.png);
+            background-repeat: repeat-x;
+            border: 1px solid black
+        }
+
+        #repetir_vertical {
+            background-image: url(imagem/brasil.png);
+            background-repeat: repeat-y;
+            background-position: right;
+        }
+
+        .caixa {
+            width: 1900px;
+            height: 500px;
+        }
+
+        #nao_repete {
+            background-repeat: no-repeat;
+        }
+
+        .circular {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <p style="color:blue">cor com nome</p>
+        </li>
+        <hr>
+
+        <li><b style="color: #00ff00">cor po hexadecimal</b></li>
+        <hr>
+
+        <li><i><span style="color: rgb(40, 89, 131);">cor por rgb</span></i></li>
+        <hr>
+
+        <li>
+            <p style="color: rgba(100, 10 , 255, 0.2);">cor RGB com alpha</p>alfha é a transparencia
+        </li>
+        <hr>
+    </ul>
+    <ol>
+        <li style="background-color: green; color: red;">cor de <span style="color: white;">fundo</span></li>
+        <hr>
+
+        <li
+            style="background-image: url(https://i1.wp.com/www.quibesurdo.com.br/imagens/entretenimento/animais/gatinho-fofinho-brincando-com-uma-vareta-com-bolinha-confira.jpg);">
+            imagem da internete</li>
+        <hr>
+
+        <li style="background-image: url(imagem/brasil.png);">imagem baixada</li>
+        <hr>
+
+        <li style="background-image: url(imagem/brasil.png);">imagem nao repete</li>
+        <hr>
+
+        <li id="repetir_horizontal" class="caixa">repete a imagem na horizontal</li>
+
+        <li id="repetir_vertical" class="caixa">repete a imagem na vertical</li>
+
+        <li class="circular">borda circular</li>
+        <li>
+            <div style="border: 1px solid black; border-top-left-radius: 10px; border-bottom-right-radius: 30px;
+        ">
+                borda diferente
+            </div>
+        </li>
+        top-10 right-20 botton-30 left-40 
+        <li><div style="background-color: gray; width: 300px; height: 300px; margin: 10px 20px 30px 40px; padding: 100px 10px 100px 10px">
+
+        </div></li>
+        <li><span style="font-size: small;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-style: italic">
+            fontes
+        </span></li>
+    </ol>
+</body>
+
+</html>

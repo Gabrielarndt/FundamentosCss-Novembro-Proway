@@ -16,32 +16,85 @@
     </style>
 </head>
 <body>
-    <!-- paragrafo sem conteúdo
+paragrafo sem conteúdo
+<p></p>
 paragrafo com conteúdo
+<p>lorem</p>
 paragrafo com um itálico interno sem conteúdo
+<p><i></i></p>
 paragrafo com um itálico interno com conteúdo
+<p><i>lorem</i></p>
 paragrafo sem conteúdo e ao mesmo tempo outro paragrafo sem conteúdo
+<p></p>
+<p></p>
 paragrafo com conteúdo e ao mesmo tempo outro paragrafo com conteúdo (usar o tab para escrever o conteúdo em cada 1)
+<p>alog</p>
+<p>algo</p>
 criar um lista não ordenada com 5 itens internos sem conteúdo (usar o tab para escrever o conteúdo em cada 1)
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 criar um lista não ordenada com 5 itens internos com conteúdo 
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
 criar um paragrafo com atributo title sem valor
-criar um paragrafo com atributo title com valor
+<p title=""></p>
 criar um paragrafo com atributo title sem valor e atributo name sem valor
+<p title="" name=""></p>
 criar uma imagem com atributo width com valor e height com valor
+<img src="" alt="" width="50px" height="50px">
 Criar uma tabela com a seguinte estrutura
 table com atributo border inicializado com 1
 thead = cabeçalho
 3 th  = títulos de cabeçalho
 tbody
 4 tr = linhas de conteúdo 
-3 td= células de conteúdo  -->
+3 td= células de conteúdo  
 
+table>thead+tbody
+<table>
+    <thead><th>th*3</th>
+    <th></th>
+    <th></th></thead>
+    <tbody><tr>
+        <td>tr*4>td*3</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr></tbody>
+</table>
 
+<!-- ---------------------------------------------------------------------- -->
     <p>p</p>
     <p>p{lorem}</p>
 
     <p>p+p</p>
     <p></p>
+    <p>p+i+b</p>
+    <i></i><b></b>
 
     <p>p*3</p>
     <p>   </p>
@@ -56,6 +109,6 @@ tbody
     <p title="teste"></p>
     <p title="teste" name="teste">p[title=teste][name=teste]</p>
 
-algo
+
 </body>
 </html>
